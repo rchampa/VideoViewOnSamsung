@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun getUri() : Uri {
-
+        //check: https://developer.android.com/guide/topics/media/media-formats
         val videoPath = "android.resource://" + applicationContext.packageName + "/"
         val uri = Uri.parse(videoPath + R.raw.background)//not working :(
 //        val uri = Uri.parse(videoPath + R.raw.background_no_audio)//working!!! (no audio signal)
